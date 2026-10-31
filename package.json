@@ -1,0 +1,15 @@
+{
+  "name": "woodpecker-method",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Woodpecker Method — chess tactics trainer with full multi-variation puzzle solving",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "data:candidates": "python3 scripts/extract-candidates.py",
+    "data:select": "node scripts/select-puzzles.mjs",
+    "data:trees": "node scripts/build-trees.mjs",
+    "data:finalize": "node scripts/finalize-puzzles.mjs"
+  }
+}
